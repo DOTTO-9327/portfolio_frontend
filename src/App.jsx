@@ -4,9 +4,9 @@ import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
 import LoginPage from "./pages/LoginPage";
-// import AdminPage from "./pages/admin/AdminPage";
-// import CreateProjectPage from "./pages/admin/CreateProjectPage";
-// import EditProjectPage from "./pages/admin/EditProjectPage";
+import AdminPage from "./pages/admin/AdminPage";
+import CreateProjectPage from "./pages/admin/CreateProjectPage";
+import EditProjectPage from "./pages/admin/EditProjectPage";
 import PrivateRoute from "./components/PrivateRoute.jsx";
 import { Navbar } from "./components/Navbar.jsx";
 import { Toaster } from "sonner";
@@ -19,7 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
-        {/* <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/projects/:id" element={<ProjectDetailPage />} />
         <Route
           path="/admin"
@@ -44,7 +44,7 @@ function App() {
               <EditProjectPage />
             </PrivateRoute>
           }
-        /> */}
+        />
       </Routes>
     </>
   );
